@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>app</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+
+	<h1 style="font-size:50px;">
+		<center>Shopping app</center>
+	</h1>
+	
+</head>
+<body>
+	<center><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>You have wall</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>We have paintings</h2>
+    </div>
+  </div>
+</div>
+</center>
+	<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">acrylic painting</li>
+    <li class="grey">₹500</li>
+    <li>A4 sized</li>
+    <li>no frame</li>
+    <li>canvas</li>
+    <li>Hand painting</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Pencil sketches</li>
+    <li class="grey">₹500</li>
+    <li>A4 sized</li>
+    <li>no frame</li>
+    <li>Ivory sheet</li>
+    <li>Hand sketch</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Realistic painting/sketch</li>
+    <li class="grey">4000</li>
+    <li>A4/A3 sized</li>
+    <li>with frame</li>
+    <li>canvas/Ivory</li>
+    <li>Hand work</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="Paintings_Vindhya.jpg" alt="Olive jar" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Radha_krishna.jpg" alt="Radha krishna" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Ganesha.jpg" alt="Ganesha" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Bharathnatyam.jpg" alt="Bharathnatyam" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+	
+
+</body>
+</html>
